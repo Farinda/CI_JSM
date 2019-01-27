@@ -77,6 +77,8 @@
 								      <option>Baik</option>
 								      <option>Rusak</option>
 								    </select>
+
+								    <script type="text/javascript">$('#status').val('<?php echo $detail->status ?>');</script>
 							</div>
 							
 							<div class="form-group">

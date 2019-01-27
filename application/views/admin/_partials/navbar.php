@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand navbar-dark bg-primary static-top">
 
-    <a class="navbar-brand mr-1" href="<?php echo site_url('admin') ?>"><?php echo SITE_NAME ?></a>
+    <a class="navbar-brand mr-1" href="<?php echo site_url('admin') ?>" ><img src="<?php echo base_url('assets/')?>img/JSM.png" style="max-height: 45px" alt=""></a>
 
     <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
         <i class="fas fa-bars"></i>
@@ -9,18 +9,18 @@
     <!-- Navbar Search -->
     <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
         <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+            <!-- <input type="text" class="form-control" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
             <div class="input-group-append">
                 <button class="btn btn-light" type="button">
                     <i class="fas fa-search"></i>
                 </button>
-            </div>
+            </div> -->
         </div>
     </form>
 
     <!-- Navbar -->
     <ul class="navbar-nav ml-auto ml-md-0">
-        <li class="nav-item dropdown no-arrow mx-1">
+        <!-- <li class="nav-item dropdown no-arrow mx-1">
             <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                 aria-expanded="false">
                 <i class="fas fa-bell fa-fw"></i>
@@ -46,7 +46,7 @@
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Something else here</a>
             </div>
-        </li>
+        </li> -->
 
         <li class="nav-item dropdown no-arrow">
             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"

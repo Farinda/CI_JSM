@@ -7,7 +7,52 @@
         </a>
     </li>
 
-    <li class="nav-item dropdown <?php echo $this->uri->segment(2) == 'lokasibarang' ? 'active': '' ?>">
+    <!-- New Sidebar -->
+    <li class="nav-item dropdown <?php echo $this->uri->segment(2) == 'Activity' ? 'active': '' ?>">
+        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <i class="fas fa-fw fa-boxes"></i>
+            <span>Activity</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+            <a class="dropdown-item" href="<?php echo site_url('admin/kelompokbarang') ?>">Kelompok Barang</a>
+            <a class="dropdown-item" href="<?php echo site_url('admin/subkelompok') ?>">Sub Kelompok Barang</a>
+            <a class="dropdown-item" href="<?php echo site_url('admin/subsubkelompok') ?>">Sub-sub Kelompok</a>
+        </div>
+    </li>
+
+    <li class="nav-item dropdown <?php echo $this->uri->segment(2) == 'masteringdata' ? 'active': '' ?>">
+        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <i class="fas fa-fw fa-boxes"></i>
+            <span>Mastering Data</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+            <a class="dropdown-item" href="<?php echo site_url('admin/lokasibarang') ?>">Lokasi Barang</a>
+            <a class="dropdown-item" href="<?php echo site_url('admin/unitkerja') ?>">Unit Kerja</a>
+            <a class="dropdown-item" href="<?php echo site_url('admin/ruang') ?>">Ruang</a>
+        </div>
+    </li>
+
+    <li class="nav-item dropdown <?php echo $this->uri->segment(2) == 'reportdata' ? 'active': '' ?>">
+        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <i class="fas fa-fw fa-boxes"></i>
+            <span>Report</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+            <a class="dropdown-item" href="<?php echo site_url('admin/report') ?>">Report</a>
+            <a class="dropdown-item" href="<?php echo site_url('admin/detail') ?>">Detail</a>
+            <a class="dropdown-item" href="<?php echo site_url('admin/detaillog') ?>">Data History</a>
+            <a class="dropdown-item" href="<?php echo site_url('admin/pemeriksaan') ?>">Pemeriksaan</a>
+        </div>
+    </li>
+
+    <!-- End of NewSidebar -->
+
+    <!-- Old Sidebar -->
+    
+    <!-- <li class="nav-item dropdown <?php echo $this->uri->segment(2) == 'lokasibarang' ? 'active': '' ?>">
         <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
             <i class="fas fa-fw fa-boxes"></i>
@@ -106,7 +151,10 @@
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
             <a class="dropdown-item" href="<?php echo site_url('admin/report') ?>">Report Detail</a>
         </div>
-    </li>
+    </li> -->
+
+    <!-- End of Old Sidebar -->
+
      <li class="nav-item dropdown <?php echo $this->uri->segment(2) == 'pegawai' ? 'active': '' ?>">
         <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">

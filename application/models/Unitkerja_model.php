@@ -62,7 +62,7 @@
 			$this->nama= $post["nama"];
 			$this->tanggal=$post["tanggal"];
 			$this->pic=$post["pic"];
-			$this->db_update($this->_table, $this, array('kode' => $post['id']));
+			$this->db_update($this->_table, $this, array('kode' => $post['kode']));
 		}
 
 		public function delete($kode)

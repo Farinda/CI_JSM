@@ -109,14 +109,17 @@
       $retRusak = "[";
       $idx = 0;
       for ($i=0; $i < 12; $i++) {  
-        if ($resRusak[$idx]->bulan == ($i+1)) {
+        if(count($resRusak) == 0){
+          $retRusak .= '"0",';
+        }else if ($resRusak[$idx]->bulan == ($i+1)) {
           $retRusak .= '"'.$resRusak[$idx]->jumlah.'",';
+          $idx++;
         }else{
           $retRusak .= '"0",';
         }
       }
       $retRusak = substr($retRusak, 0,-1)."]";
-   
+
 
       $this->db->select('month(tanggal) as bulan,count(id) as jumlah');
       $this->db->from('tb_detail');
@@ -127,14 +130,16 @@
          $retBaik = "[";
       $idx = 0;
       for ($i=0; $i < 12; $i++) {  
-        if ($resBaik[$idx]->bulan == ($i+1)) {
+        if(count($resBaik) == 0 || !isset($resBaik[$idx])){
+          $retBaik .= '"0",';
+        }else if ($resBaik[$idx]->bulan == ($i+1)) {
           $retBaik .= '"'.$resBaik[$idx]->jumlah.'",';
+          $idx++;
         }else{
           $retBaik .= '"0",';
         }
       }
       $retBaik = substr($retBaik, 0,-1)."]";
-   
 
        ?>
       <div class="card-body">

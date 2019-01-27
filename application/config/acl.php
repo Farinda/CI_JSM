@@ -68,6 +68,10 @@ $acl = array(
 		'admin' => true,
 		'pegawai' => false
 	),
+	'admin/detaillog' => array(
+		'admin' => true,
+		'pegawai' => false
+	),
 	'admin/detailpemeriksaan' => array(
 		'admin' => true,
 		'pegawai' => false

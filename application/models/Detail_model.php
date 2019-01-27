@@ -186,12 +186,57 @@
 			$this->status = $post["status"];
 			$this->tanggal=$post["tanggal"];
 			$this->pic=$post["pic"];
-			$this->db->update($this->_table, $this, array('id' => $post['id']));
+
+			#saveolddata
+			$data_old = $this->db->where('id',$post['id'])->get('tb_detail')->row(0);
+
+			$update = $this->db->update($this->_table, $this, array('id' => $post['id']));
+			if ($update) {
+				$set_log = [
+					'oldid' => $data_old->id,
+					'kodelokasi' => $data_old->kodelokasi,
+					'kodeunit' => $data_old->kodeunit,
+					'kodekelompok' => $data_old->kodekelompok,
+					'idsub' => $data_old->idsub,
+					'idsubsub' => $data_old->idsubsub,
+					'nomorurut' => $data_old->nomorurut,
+					'nomorinventaris' => $data_old->nomorinventaris,
+					'tipe' => $data_old->tipe,
+					'warna' => $data_old->warna,
+					'status' => $data_old->status,
+					'pic' => $data_old->pic,
+					'tanggaledit' => date('Y-m-d'),
+				];
+				$this->db->insert('tb_detail_log',$set_log);
+			}
 		}
 
 		public function delete($id)
 	    {
-	        return $this->db->delete($this->_table, array("id" => $id));
+	    				#saveolddata
+			$data_old = $this->db->where('id',$post['id'])->get('tb_detail')->row(0);
+
+	     	
+	     	   $delete= $this->db->delete($this->_table, array("id" => $id));
+	     	   if ($delete) {
+				$set_log = [
+					'oldid' => $data_old->id,
+					'kodelokasi' => $data_old->kodelokasi,
+					'kodeunit' => $data_old->kodeunit,
+					'kodekelompok' => $data_old->kodekelompok,
+					'idsub' => $data_old->idsub,
+					'idsubsub' => $data_old->idsubsub,
+					'nomorurut' => $data_old->nomorurut,
+					'nomorinventaris' => $data_old->nomorinventaris,
+					'tipe' => $data_old->tipe,
+					'warna' => $data_old->warna,
+					'status' => $data_old->status,
+					'pic' => $data_old->pic,
+					'tanggaledit' => date('Y-m-d'),
+				];
+				$this->db->insert('tb_detail_log',$set_log);
+			}
+			return $delete;
 	    }
 	}
 

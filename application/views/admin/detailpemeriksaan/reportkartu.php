@@ -11,7 +11,7 @@
 <div class="col-md-12 mt-3">
 	<div class="card">
 	<div class="card-body">
-		JASAMARGA Surabaya Mojokerto
+		<img src="<?php echo base_url('assets/')?>img/JSM.png" style="max-height: 45px" alt="" >
 	</div>
 </div>
 <table class="table table-striped table-bordered mt-3">
@@ -23,7 +23,7 @@
 	</thead>
 	<tbody>
 		<tr>
-										<th>Id Pemeriksaan</th>
+										<!-- <th>Id Pemeriksaan</th> -->
 										<th>Nomor Inventaris</th>
 										<th>Nama Barang</th>
 										<th>Jumlah</th>
@@ -32,10 +32,10 @@
 									</tr>
 		<?php foreach ($detailpemeriksaan as $key => $dp): ?>
 			<tr>
-										<td width="150">
+										<!-- <td>
 											<?php echo $dp->id_pemeriksaan ?>
-										</td>
-										<td>
+										</td> -->
+										<td  width="150">
 											<?php echo $dp->nomorinventaris ?>
 										</td>
 										<td>

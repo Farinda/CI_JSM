@@ -17,8 +17,8 @@ var myLineChart = new Chart(ctx, {
       data: baik,
     },{
       label: "Rusak",
-      backgroundColor: "rgba(191, 19, 53,1) ",
-      borderColor: "rgba(2,117,216,1)",
+      backgroundColor: "rgba(191, 19, 53,0.5) ",
+      borderColor: "rgba(191, 19, 53,1)",
       data: rusak,
     }],
   },

@@ -26,7 +26,7 @@ class Pegawai extends CI_Controller {
 	}
 	public function index()
 	{
-		$data['pegawai_data'] = $this->Pegawai_model->get_data();
+		$data['pegawai_data'] = $this->pegawai_model->get_data();
 		$this->load->view('admin/pegawai/data_view',$data);
 	}
 	public function create()

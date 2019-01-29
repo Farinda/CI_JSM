@@ -109,7 +109,7 @@
       $retRusak = "[";
       $idx = 0;
       for ($i=0; $i < 12; $i++) {  
-        if(count($resRusak) == 0){
+       if(count($resRusak) == 0 || !isset($resRusak[$idx])){
           $retRusak .= '"0",';
         }else if ($resRusak[$idx]->bulan == ($i+1)) {
           $retRusak .= '"'.$resRusak[$idx]->jumlah.'",';

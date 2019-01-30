@@ -51,11 +51,11 @@
         <li class="nav-item dropdown no-arrow">
             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                 aria-expanded="false">
-                <i class="fas fa-user-circle fa-fw"></i> Admin
+                <i class="fas fa-user-circle fa-fw"></i> <?php echo $this->session->userdata('logged_in')['level'] ?>
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
                 <a class="dropdown-item" href="#"><?php echo $this->session->userdata('logged_in')['level'] ?></a>
-                <a class="dropdown-item" href="#">Activity Log</a>
+                <!-- <a class="dropdown-item" href="#">Activity Log</a> -->
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="<?php echo site_url('Login/logout')?>" >Logout</a>
             </div>

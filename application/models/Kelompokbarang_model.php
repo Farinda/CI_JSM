@@ -65,7 +65,7 @@
 			$this->db->update($this->_table, $this, array('kode' => $post['kode']));
 		}
 
-		public function delete($kode)
+		public function delete($id)
 	    {
 	        return $this->db->delete($this->_table, array("kode" => $id));
 	    }

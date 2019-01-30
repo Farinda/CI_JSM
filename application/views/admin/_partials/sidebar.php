@@ -15,36 +15,36 @@
             <span>Activity</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-            <a class="dropdown-item" href="<?php echo site_url('admin/kelompokbarang') ?>">Kelompok Barang</a>
-            <a class="dropdown-item" href="<?php echo site_url('admin/subkelompok') ?>">Sub Kelompok Barang</a>
-            <a class="dropdown-item" href="<?php echo site_url('admin/subsubkelompok') ?>">Sub-sub Kelompok</a>
+            <a class="dropdown-item" href="<?php echo site_url('admin/kelompokbarang') ?>"><i class="fas fa-fw fa-boxes"></i>Kelompok Barang</a>
+            <a class="dropdown-item" href="<?php echo site_url('admin/subkelompok') ?>"><i class="fas fa-fw fa-boxes"></i>Sub Kelompok Barang</a>
+            <a class="dropdown-item" href="<?php echo site_url('admin/subsubkelompok') ?>"><i class="fas fa-fw fa-boxes"></i>Sub-sub Kelompok</a>
         </div>
     </li>
 
     <li class="nav-item dropdown <?php echo $this->uri->segment(2) == 'masteringdata' ? 'active': '' ?>">
         <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
-            <i class="fas fa-fw fa-boxes"></i>
+            <i class="fas fa-building"></i>
             <span>Mastering Data</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-            <a class="dropdown-item" href="<?php echo site_url('admin/lokasibarang') ?>">Lokasi Barang</a>
-            <a class="dropdown-item" href="<?php echo site_url('admin/unitkerja') ?>">Unit Kerja</a>
-            <a class="dropdown-item" href="<?php echo site_url('admin/ruang') ?>">Ruang</a>
+            <a class="dropdown-item" href="<?php echo site_url('admin/lokasibarang') ?>"><i class="fas fa-building"></i>Lokasi Barang</a>
+            <a class="dropdown-item" href="<?php echo site_url('admin/unitkerja') ?>"><i class="fas fa-building"></i>Unit Kerja</a>
+            <a class="dropdown-item" href="<?php echo site_url('admin/ruang') ?>"><i class="fas fa-building"></i>Ruang</a>
         </div>
     </li>
 
     <li class="nav-item dropdown <?php echo $this->uri->segment(2) == 'reportdata' ? 'active': '' ?>">
         <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
-            <i class="fas fa-fw fa-boxes"></i>
+            <i class="fas fa-clipboard-list"></i>
             <span>Report</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-            <a class="dropdown-item" href="<?php echo site_url('admin/report') ?>">Report</a>
-            <a class="dropdown-item" href="<?php echo site_url('admin/detail') ?>">Detail</a>
-            <a class="dropdown-item" href="<?php echo site_url('admin/detaillog') ?>">Data History</a>
-            <a class="dropdown-item" href="<?php echo site_url('admin/pemeriksaan') ?>">Pemeriksaan</a>
+            <a class="dropdown-item" href="<?php echo site_url('admin/report') ?>"><i class="fas fa-clipboard-list"></i>Report</a>
+            <a class="dropdown-item" href="<?php echo site_url('admin/detail') ?>"><i class="fas fa-clipboard-list"></i>Detail</a>
+            <a class="dropdown-item" href="<?php echo site_url('admin/detaillog') ?>"><i class="fas fa-clipboard-list"></i>Data History</a>
+            <a class="dropdown-item" href="<?php echo site_url('admin/pemeriksaan') ?>"><i class="fas fa-clipboard-list"></i>Pemeriksaan</a>
         </div>
     </li>
 
@@ -158,17 +158,17 @@
      <li class="nav-item dropdown <?php echo $this->uri->segment(2) == 'pegawai' ? 'active': '' ?>">
         <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
-            <i class="fas fa-fw fa-boxes"></i>
-            <span>Pegawai</span>
+            <i class="fas fa-user-alt"></i>
+            <span>PIC</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-            <a class="dropdown-item" href="<?php echo site_url('admin/pegawai/create') ?>">New Pegawai</a>
-            <a class="dropdown-item" href="<?php echo site_url('admin/pegawai') ?>">List Pegawai</a>
+            <a class="dropdown-item" href="<?php echo site_url('admin/pegawai/create') ?>"><i class="fas fa-user-alt"></i>New PIC</a>
+            <a class="dropdown-item" href="<?php echo site_url('admin/pegawai') ?>"><i class="fas fa-user-alt"></i>List PIC</a>
         </div>
     </li>
-    <li class="nav-item">
+   <!--  <li class="nav-item">
         <a class="nav-link" href="#">
             <i class="fas fa-fw fa-cog"></i>
             <span>Settings</span></a>
-    </li>
+    </li> -->
 </ul>

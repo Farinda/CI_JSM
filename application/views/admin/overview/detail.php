@@ -20,10 +20,13 @@
 
 				<!-- DataTables -->
 				<div class="card mb-3">
-					<div class="card-header">
+					<!-- <div class="card-header">
 						<a href="<?php echo site_url('admin/detail/add') ?>"><i class="fas fa-plus"></i> Add New</a>
 					</div>
-					<div class="card-body">
+					<div class="card-body"> -->
+						<div class="card-header">
+						<a href="<?php echo site_url('admin/') ?>"><i class="fas fa-arrow-left"></i> Back</a>
+					</div>
 
 						<div class="table-responsive">
 							<table class="table table-hover" id="dataTable" width="100%" cellspacing="0">

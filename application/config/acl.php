@@ -74,7 +74,7 @@ $acl = array(
 	),
 	'admin/detailpemeriksaan' => array(
 		'admin' => true,
-		'pegawai' => false
+		'pegawai' => true
 	),
 	'admin/kelompokbarang' => array(
 		'admin' => true,
@@ -94,7 +94,7 @@ $acl = array(
 	),
 	'admin/pemeriksaan' => array(
 		'admin' => true,
-		'pegawai' => false
+		'pegawai' => true
 	),
 	'admin/report' => array(
 		'admin' => true,
@@ -102,7 +102,7 @@ $acl = array(
 	),
 	'admin/reportpemeriksaan' => array(
 		'admin' => true,
-		'pegawai' => false
+		'pegawai' => true
 	),
 	'admin/ruang' => array(
 		'admin' => true,

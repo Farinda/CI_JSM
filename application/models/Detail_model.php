@@ -205,6 +205,7 @@
 					'warna' => $data_old->warna,
 					'status' => $data_old->status,
 					'pic' => $data_old->pic,
+					'tanggal' => $data_old->tanggal,
 					'tanggaledit' => date('Y-m-d'),
 				];
 				$this->db->insert('tb_detail_log',$set_log);
@@ -214,7 +215,7 @@
 		public function delete($id)
 	    {
 	    				#saveolddata
-			$data_old = $this->db->where('id',$post['id'])->get('tb_detail')->row(0);
+			$data_old = $this->db->where('id',$id)->get('tb_detail')->row(0);
 
 	     	
 	     	   $delete= $this->db->delete($this->_table, array("id" => $id));
@@ -232,7 +233,9 @@
 					'warna' => $data_old->warna,
 					'status' => $data_old->status,
 					'pic' => $data_old->pic,
-					'tanggaledit' => date('Y-m-d'),
+					'tanggal' => $data_old->tanggal,
+					'tanggalhapus' => date('Y-m-d'),
+
 				];
 				$this->db->insert('tb_detail_log',$set_log);
 			}

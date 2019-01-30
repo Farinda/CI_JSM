@@ -11,15 +11,15 @@ var myLineChart = new Chart(ctx, {
   data: {
     labels: ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"],
     datasets: [{
-      label: "Baik",
-      backgroundColor: "rgba(2,117,216,0.5)",
-      borderColor: "rgba(2,117,216,1)",
-      data: baik,
-    },{
       label: "Rusak",
-      backgroundColor: "rgba(191, 19, 53,0.5) ",
-      borderColor: "rgba(191, 19, 53,1)",
+      backgroundColor: "rgba(220,53,69,0.5)",
+      borderColor: "rgba(220,53,69,1)",
       data: rusak,
+    },{
+      label: "Baik",
+      backgroundColor: 'rgba(40,167,69,0.5)',
+      borderColor: 'rgba(40,167,69,1)',
+      data: baik
     }],
   },
   options: {

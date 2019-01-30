@@ -50,7 +50,6 @@
 		public function save()
 		{
 			$post = $this->input->post();
-			$this->id = uniqid();
 			$this->kode = $post["kode"];
 			$this->nama = $post["nama"];
 			$this->tanggal=$post["tanggal"];

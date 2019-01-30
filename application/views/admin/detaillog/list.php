@@ -20,9 +20,7 @@
 
 				<!-- DataTables -->
 				<div class="card mb-3">
-					<div class="card-header">
-						<a href="<?php echo site_url('admin/detail/add') ?>"><i class="fas fa-plus"></i> Add New</a>
-					</div>
+					
 					<div class="card-body">
 
 						<div class="table-responsive">
@@ -43,7 +41,7 @@
 										<th>Tanggal</th>
 										<th>Tanggal Edit</th>
 										<th>Tanggal Hapus</th>
-										<th>Action</th>
+										<!-- <th>Action</th> -->
 									</tr>
 								</thead>
 								<tbody>
@@ -93,12 +91,12 @@
 										<td>
 											<?php echo $detail->tanggalhapus ?>
 										</td>
-										<td width="250">
+										<!-- <td width="250">
 											<a href="<?php echo site_url('admin/detail/edit/'.$detail->id) ?>"
 											 class="btn btn-small"><i class="fas fa-edit"></i> Edit</a>
 											<a onclick="deleteConfirm('<?php echo site_url('admin/detail/delete/'.$detail->id) ?>')"
 											 href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a>
-										</td>
+										</td> -->
 									</tr>
 									<?php endforeach; ?>
 
